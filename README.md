@@ -1,5 +1,3 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
 First, run the development server:
@@ -14,23 +12,30 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Using the Clock:
+Viewing Time: Upon loading the clock, you'll see the current time displayed in hours, minutes, and seconds, along with an indication of AM/PM.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Background Color:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The background color of the clock changes dynamically based on the time of day:
+Lighter colors during the daytime (6 AM to 6 PM).
+Darker colors during the nighttime (6 PM to 6 AM).
+Setting Alarms:
+Adding an Alarm:
 
-## Learn More
+Scroll down to the "Set Alarm" section below the clock.
+Enter the desired alarm time by inputting the hour and minute using the provided input fields.
+Select AM or PM using the dropdown menu.
+Click on the "Set Alarm" button to add the alarm.
+Viewing Alarms:
 
-To learn more about Next.js, take a look at the following resources:
+Any alarms you set will be displayed in a list format below the clock.
+Deleting Alarms:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Each alarm in the list is accompanied by a "Delete" button.
+Click on the "Delete" button corresponding to the alarm you wish to remove.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Alarm Notifications:
+When an alarm time is reached, a browser alert will notify you.
+The clock's background color changes to green 10 minutes before an alarm goes off, providing a visual cue that an alarm is approaching.
+Enjoy using the clock and setting alarms!
